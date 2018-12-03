@@ -9,6 +9,6 @@ spl_autoload_register(function ($class) {
 
 $session = new FrontController();
 
-$session->set_url("http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+$session->set_url("$_SERVER[REQUEST_URI]");
 
 $session->render();
