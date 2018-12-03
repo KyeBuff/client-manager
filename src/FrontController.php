@@ -7,6 +7,9 @@ class FrontController {
     private $url;
     private $routes = [
         '/' => 'home.php',
+        '/hosting' => '/hosting/index.php',
+        '/retainers' => '/retainers/index.php',
+        '/plugins' => '/plugins/index.php',
     ];
 
     public function set_url($url) 

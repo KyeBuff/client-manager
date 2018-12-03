@@ -25,5 +25,11 @@
   <![endif]-->
 
   <header>
-  HEADER
+    <h1>Lunar Client Manager</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/hosting">Hosting</a>
+        <a href="/retainers">Maintenance Retainers</a>
+        <a href="/plugins">Plugin Management</a>
+    </nav>
   </header>
