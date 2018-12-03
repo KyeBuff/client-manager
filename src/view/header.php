@@ -15,6 +15,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -22,12 +25,14 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <header>
-    <h1>Lunar Client Manager</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/hosting">Hosting</a>
-        <a href="/retainers">Maintenance Retainers</a>
-        <a href="/plugins">Plugin Management</a>
-    </nav>
-  </header>
+  <div class="container">
+
+    <header>
+      <h1>Lunar Client Manager</h1>
+      <nav>
+          <a href="/">Home</a>
+          <a href="/hosting">Hosting</a>
+          <a href="/retainers">Maintenance Retainers</a>
+          <a href="/plugins">Plugin Management</a>
+      </nav>
+    </header>
