@@ -1,74 +1,76 @@
 <?php
+
 ?>
 
 <section class="add-clients">
     <h2>Add a Client</h2>
-    <form class="add-clients__form form row">
+    <form action="" method="POST" class="add-clients__form form row">
         <div class="form-group col-4">
             <label for="client">Client</label>
-            <input type="text" class="form-control" id="client" placeholder="Enter client name">
+            <input type="text" class="form-control" id="client" placeholder="Enter client name" name="client">
         </div>
         <div class="form-group col-4">
             <label for="contact-email">Email address</label>
-            <input type="email" class="form-control" id="contact-email" placeholder="Enter email">
+            <input type="email" class="form-control" id="contact-email" placeholder="Enter email" name="email">
         </div>
         <div class="form-group col-4">
             <label for="client">Agency (if applicable)</label>
-            <input type="text" class="form-control" id="client" placeholder="Enter agency name">
+            <input type="text" class="form-control" id="client" placeholder="Enter agency name" name="agency">
         </div>
         <div class="form-group col-4">
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="hosting">
+                <input type="checkbox" class="form-check-input" id="hosting" name="hosting">
                 <label class="form-check-label" for="hosting">Hosting?</label>
             </div>
             <div class="d-flex">
                 <div class="form-group">
                     <label for="client">Renewal date</label>
-                    <input type="date" class="form-control" id="client" placeholder="Enter agency name">
+                    <input type="date" class="form-control" id="client" name="hosting-renewal">
                 </div>
                 <div class="form-group">
                     <label for="client">Invoiced</label>
-                    <input type="date" class="form-control" id="client" placeholder="Enter agency name">
+                    <input type="date" class="form-control" id="client" name="hosting-invoiced">
                 </div>
             </div>
         </div>
         <div class="form-group col-4">
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="hosting">
-                <label class="form-check-label" for="hosting">Domain?</label>
+                <input type="checkbox" class="form-check-input" id="domain" name="domain">
+                <label class="form-check-label" for="domain">Domain?</label>
             </div>
             <div class="d-flex">
                 <div class="form-group">
                     <label for="client">Renewal date</label>
-                    <input type="date" class="form-control" id="client" placeholder="Enter agency name">
+                    <input type="date" class="form-control" id="client" name="domain-renewal">
                 </div>
                 <div class="form-group">
                     <label for="client">Invoiced</label>
-                    <input type="date" class="form-control" id="client" placeholder="Enter agency name">
+                    <input type="date" class="form-control" id="client" name="domain-invoiced">
                 </div>
             </div>
         </div>
         <div class="form-group col-4">
             <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="hosting">
-                <label class="form-check-label" for="hosting">Retainer?</label>
+                <input type="checkbox" class="form-check-input" id="retainer" name="retainer">
+                <label class="form-check-label" for="retainer">Retainer?</label>
             </div>
             <div class="d-flex">
                 <div class="form-group">
                     <label for="frequency">Frequency</label>
                     <div class="form-group">
-                        <select class="form-control" id="frequency">
-                            <option>Weekly</option>
-                            <option>Monthly</option>
-                            <option>Quarterly</option>
+                        <select class="form-control" id="frequency" name="retainer-frequence">
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="quarterly">Quarterly</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="client">Invoiced</label>
-                    <input type="date" class="form-control" id="client" placeholder="Enter agency name">
+                    <input type="date" class="form-control" id="client">
                 </div>
             </div>
         </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </form>
 </section>
