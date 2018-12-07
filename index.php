@@ -1,11 +1,8 @@
 <?php
 
-use src\FrontController;
+require 'vendor/autoload.php';
 
-spl_autoload_register(function ($class) {
-    $file = str_replace('\\', '/', $class);
-    include "$file.php";
-});
+use App\FrontController;
 
 $session = new FrontController();
 

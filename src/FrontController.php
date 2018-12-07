@@ -1,6 +1,6 @@
 <? 
 
-namespace src;
+namespace App;
 
 class FrontController {
 
